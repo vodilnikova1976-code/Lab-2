@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Світ стаціонарних ПК та комплектуючих</title>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&family=New+Rocker&family=Nosifer&family=Pixelify+Sans:wght@400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul style="display: flex; gap: 15px; list-style: none; padding: 0;">
+    <li><a href="#computers">Home</a></li>
+    <li><a href="#articles">About Us</a></li>
+    <li><a href="#survey">Contacts</a></li>
+    <li><a href="login.html" style="color: #ff4d4d;">Log out</a></li>
+</ul>
+            <form action="#" method="get" style="margin-top: 10px;">
+                <input type="search" name="q" placeholder="Пошук ПК/Деталей" required style="width: 200px; display: inline-block;">
+                <button type="submit" style="margin-top: 0;">Шукати</button>
+            </form>
+        </nav>
+    </header>
+
+    <main>
+        <section id="articles">
+            <h2>Гайди та Огляди</h2>
+            <article>
+                <h3>Як правильно організувати охолодження у Full-Tower корпусі</h3>
+                <p>Розбираємо схеми повітряних потоків, правильне розміщення кулерів на вдув та видув, а також переваги систем рідинного охолодження (AIO) для топових процесорів...</p>
+            </article>
+            <article>
+                <h3>Бюджетна збірка для кіберспорту: чи вистачить процесора Core i3?</h3>
+                <p>Тестуємо продуктивність популярної зв'язки Intel Core i3-12100F та відеокарти GTX 1650 Super у сучасних змагальних іграх, таких як CS2...</p>
+            </article>
+        </section>
+
+        <section id="computers">
+            <h2>Популярні збірки ПК</h2>
+            
+            <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                <div class="card" style="background: #1a1a24; padding: 15px; border-radius: 8px; flex: 1 1 300px;">
+                    <img src="images/PC1.jpg" alt="Enthusiast Build Specs">
+                    <h3> Enthusiast Build Specs</h3>
+                    <ul style="padding-left: 20px;">
+                        <li>CPU: Intel Core i9-14900K</li>
+                        <li>GPU: RTX 5090</li>
+                        <li>RAM: 64GB DDR5 6000MHz</li>
+                        <li>Storage: 2TB NVMe Gen4 SSD</li>
+                        <li>Cooling: 360mm AIO Liquid Cooler</li>
+                        <li>PSU: 1000W 80+ Gold</li>
+                        <li>Case: Full-tower case with high airflow</li>
+                    </ul>
+                    <button type="button">Add to Cart</button>
+                </div>
+
+                <div class="card" style="background: #1a1a24; padding: 15px; border-radius: 8px; flex: 1 1 300px;">
+                    <img src="images/PC2.jpg" alt="High-End Build Specs">
+                    <h3> High-End Build Specs</h3>
+                    <ul style="padding-left: 20px;">
+                        <li>CPU: AMD Ryzen 9 7900X</li>
+                        <li>GPU: RTX 4080 Super</li>
+                        <li>RAM: 32GB DDR5 5600MHz</li>
+                        <li>Storage: 1TB NVMe Gen4 SSD</li>
+                        <li>Cooling: 240mm AIO + 4 RGB fans</li>
+                        <li>PSU: 850W 80+ Gold</li>
+                        <li>Case: Mid-tower tempered glass case</li>
+                    </ul>
+                    <button type="button">Add to Cart</button>
+                </div>
+
+                <div class="card" style="background: #1a1a24; padding: 15px; border-radius: 8px; flex: 1 1 300px;">
+                    <img src="images/PC3.jpg" alt="Balanced Modern Build Specs">
+                    <h3> Balanced Modern Build Specs</h3>
+                    <ul style="padding-left: 20px;">
+                        <li>CPU: Intel Core i5-13600F</li>
+                        <li>GPU: RTX 5060</li>
+                        <li>RAM: 16GB DDR5 5200MHz</li>
+                        <li>Storage: 1TB NVMe Gen4 SSD</li>
+                        <li>Cooling: Stock cooler + 3 ARGB fans</li>
+                        <li>PSU: 650W 80+ Bronze</li>
+                        <li>Case: Mid-tower case with tempered glass</li>
+                    </ul>
+                    <button type="button">Add to Cart</button>
+                </div>
+
+                <div class="card" style="background: #1a1a24; padding: 15px; border-radius: 8px; flex: 1 1 300px;">
+                    <img src="images/PC4.jpg" alt="Budget Build Specs i5">
+                    <h3> Budget Build Specs (i5)</h3>
+                    <ul style="padding-left: 20px;">
+                        <li>CPU: Intel Core i5-12400F</li>
+                        <li>GPU: GTX 1660 Super / RTX 3050</li>
+                        <li>RAM: 16GB DDR4 3200MHz</li>
+                        <li>Storage: 500GB NVMe SSD</li>
+                        <li>Cooling: Stock + 3 RGB fans</li>
+                        <li>PSU: 550W 80+ Bronze</li>
+                        <li>Case: Compact case with minimal RGB</li>
+                    </ul>
+                    <button type="button">Add to Cart</button>
+                </div>
+
+                <div class="card" style="background: #1a1a24; padding: 15px; border-radius: 8px; flex: 1 1 300px;">
+                    <img src="images/PC5.jpg" alt="Budget Build Specs i3">
+                    <h3> Budget Build Specs (i3)</h3>
+                    <ul style="padding-left: 20px;">
+                        <li>CPU: Intel Core i3-12100F</li>
+                        <li>GPU: GTX 1650 Super / RX 580</li>
+                        <li>RAM: 16GB DDR4 2666MHz</li>
+                        <li>Storage: 480GB SATA SSD</li>
+                        <li>Cooling: Stock cooler</li>
+                        <li>PSU: 500W 80+ White</li>
+                        <li>Case: Basic case</li>
+                    </ul>
+                    <button type="button">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="survey">
+            <h2>Анкета підбору комп'ютера</h2>
+            <form action="#" method="post" style="max-width: 600px; background: #1a1a24; padding: 20px; border-radius: 8px;">
+                <label for="user-login">Ваш логін:</label>
+                <input type="text" id="user-login" name="username" required>
+                
+                <label for="user-email">Ел. пошта:</label>
+                <input type="email" id="user-email" name="useremail" required>
+                
+                <label for="pc-goal">Основне завдання для ПК:</label>
+                <select id="pc-goal" name="goal">
+                    <option value="coding" selected>Робота та програмування</option>
+                    <option value="esports">Кіберспорт (CS2, Valorant тощо)</option>
+                    <option value="aaa-games">Вимогливі ААА-ігри на максималках</option>
+                    <option value="streaming">Стрімінг та монтаж відео</option>
+                </select>
+                
+                <fieldset style="margin-top: 15px; border: 1px solid #333; padding: 10px;">
+                    <legend>Бажаний розмір корпусу:</legend>
+                    <label style="display: block;"><input type="radio" name="case_size" value="full_tower"> Full-Tower</label>
+                    <label style="display: block;"><input type="radio" name="case_size" value="mid_tower" checked> Mid-Tower</label>
+                    <label style="display: block;"><input type="radio" name="case_size" value="compact"> Compact / Mini-ITX</label>
+                </fieldset>
+
+                <fieldset style="margin-top: 15px; border: 1px solid #333; padding: 10px;">
+                    <legend>Найважливіші комплектуючі:</legend>
+                    <label style="display: block;"><input type="checkbox" name="parts" value="cpu"> Потужний процесор</label>
+                    <label style="display: block;"><input type="checkbox" name="parts" value="gpu"> Топова відеокарта</label>
+                    <label style="display: block;"><input type="checkbox" name="parts" value="ram"> Багато швидкої ОЗП (DDR5)</label>
+                </fieldset>
+
+                <label for="extra-info">Додаткові побажання:</label>
+                <textarea id="extra-info" name="details" rows="4" required placeholder="Бюджет, RGB тощо..."></textarea>
+                
+                <div style="display: flex; gap: 10px;">
+                    <button type="submit">Відправити</button>
+                    <button type="reset" style="background-color: #555;">Скинути</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer style="margin-top: 40px; text-align: center; color: #777;">
+        <p>© 2026 Світ стаціонарних ПК та комплектуючих</p>
+    </footer>
+</body>
+</html>

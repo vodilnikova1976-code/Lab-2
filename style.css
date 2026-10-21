@@ -1,0 +1,216 @@
+/* кольори та шрифти */
+:root {
+    --bg-dark: #0d0d12;
+    --text-main: #e0e0e0;
+    --accent-purple: #8a2be2;
+    --accent-hover: #b16cff;
+    --error-color: #ff4d4d;
+    --success-color: #00cc66;
+    --font-base: 'Roboto', sans-serif;
+    --font-pixel: 'Pixelify Sans', sans-serif;
+    --font-gothic: 'New Rocker', cursive;
+    --font-dripping: 'Nosifer', cursive;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* базові налаштування */
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: var(--font-base);
+    line-height: 1.6;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+/* меню навігації */
+nav a {
+    font-family: var(--font-gothic);
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-hover);
+}
+
+/* секція статей */
+#articles {
+    font-family: var(--font-pixel);
+}
+
+#articles h2, #articles h3 {
+    font-family: var(--font-pixel);
+    color: #ffffff;
+}
+
+/* картки товарів */
+.card h3, .card ul {
+    font-family: var(--font-dripping);
+    letter-spacing: 0.05em;
+    color: #d1d1d1;
+}
+
+/* заголовки та посилання */
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid var(--accent-purple);
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+a {
+    color: var(--accent-purple);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+/* зображення */
+img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    filter: brightness(0.8) contrast(1.1);
+}
+
+img:hover {
+    transform: scale(1.03);
+    filter: brightness(1.1) contrast(1.1);
+}
+
+/* форми */
+label {
+    display: inline-block;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    color: #aaaaaa;
+}
+
+input, select, textarea {
+    width: 100%;
+    background-color: #1a1a24;
+    color: #ffffff;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 0.6rem;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* валідація */
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--accent-purple);
+    box-shadow: 0 0 5px rgba(138, 43, 226, 0.5);
+}
+
+input:not(:placeholder-shown):valid {
+    border-color: var(--success-color);
+}
+
+input:not(:placeholder-shown):invalid {
+    border-color: var(--error-color);
+    box-shadow: 0 0 5px rgba(255, 77, 77, 0.5);
+}
+
+/* кнопки */
+button {
+    background-color: var(--accent-purple);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+}
+
+/* авторизація */
+#auth {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 3rem;
+    justify-content: center;
+}
+
+#auth article {
+    background-color: #1a1a24;
+    padding: 2rem;
+    border-radius: 12px;
+    flex: 1 1 400px; 
+    max-width: 500px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
+}
+
+#auth h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    border-bottom: none; 
+    text-align: center;
+}
+
+#auth p {
+    text-align: center;
+    color: #aaaaaa;
+    margin-bottom: 1.5rem;
+}
+
+#auth form {
+    display: flex;
+    flex-direction: column;
+}
+
+#auth article > button[type="button"] {
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+#auth article > button[type="button"]:hover {
+    background-color: #e0e0e0;
+}
+
+#auth label:has(input[type="checkbox"]) {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+#auth input[type="checkbox"] {
+    width: auto;
+}
+
+#auth article p:last-child {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}

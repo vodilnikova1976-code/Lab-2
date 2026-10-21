@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вхід - Світ ПК</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+    <main>
+        <section id="auth">
+            
+            <article>
+                <h2>Log in to your Account</h2>
+                <p>Welcome back, please enter your details.</p>
+                
+                <button type="button">Continue with Google</button>
+                <p style="text-align: center;">OR</p>
+
+               
+                <form action="index.html" method="get">
+                    <label for="login-email">Email Address</label>
+                    <input type="email" id="login-email" name="email" placeholder="johndoe@gmail.com" required>
+                    
+                    <label for="login-pass">Password</label>
+                    <input type="password" id="login-pass" name="password" required>
+                    
+                    <label><input type="checkbox" name="remember"> Remember me</label>
+                    <a href="#" style="display:block; text-align:right; margin-bottom: 1rem;">Forgot Password?</a>
+                    
+                    <button type="submit">Log in</button>
+                </form>
+                <p>Don't have an account? <a href="#register">Sign Up</a></p>
+            </article>
+
+            <article id="register">
+                <h2>Create an Account</h2>
+                <p>Sign up now to get started with an account.</p>
+                
+                <button type="button">Sign up with Google</button>
+                <p style="text-align: center;">OR</p>
+
+                <form action="index.html" method="get">
+                    <label for="reg-name">Full Name*</label>
+                    <input type="text" id="reg-name" name="fullname" placeholder="John Doe" required>
+                    
+                    <label for="reg-email">Email Address*</label>
+                    <input type="email" id="reg-email" name="email" required>
+                    
+                    <label for="reg-pass">Password*</label>
+                    <input type="password" id="reg-pass" name="password" required>
+                    
+                    <label for="reg-pass-confirm">Confirm Password*</label>
+                    <input type="password" id="reg-pass-confirm" name="password_confirm" required>
+                    
+                    <label><input type="checkbox" name="terms" required> I have read and agree to the Terms of Service</label>
+                    
+                    <button type="submit">Get Started</button>
+                </form>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </article>
+
+        </section>
+    </main>
+</body>
+</html>
